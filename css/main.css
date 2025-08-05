@@ -1,0 +1,49 @@
+:root {
+  --primary: #A8B97B;
+  --secondary: #6BAF92;
+  --accent: #F9D14F;
+  --brown: #7C5F42;
+  --black: #000000;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Lexend Giga', 'Konkhmer Sleokchher', sans-serif;
+}
+
+.section-title {
+  font-family: 'Lexend Giga', sans-serif;
+  color: var(--black);
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+a:hover, a:focus, .btn:hover, .btn:focus {
+  opacity: 0.85;
+  transition: all 0.3s ease-in-out;
+}
