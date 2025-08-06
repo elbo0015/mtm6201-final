@@ -1,54 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF‑8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us – My Veggie Spot</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kodchasan&family=Lexend+Giga&family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>About Us - Veggie Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
 </head>
-<body>
-  <header class="bg-brown text-white text-center py-4">
-    <img src="images/Veggie logo.svg" alt="Veggie Logo" width="100">
-    <h1 class="mt-2">My Veggie Spot</h1>
-  </header>
+<body class="bg-dark text-white">
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navLinks">
-        <ul class="navbar-nav ms-auto gap-3">
-          <li class="nav-item"><a class="custom-btn" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="custom-btn" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Veggie logo.svg" alt="Veggie Restaurant Logo" width="120">
+      </a>
+      <a href="index.html" class="btn-gradient">Back Home</a>
     </div>
   </nav>
 
-  <main class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="images/header.jpg" alt="Welcome Image" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6">
-        <h2>Welcome to My Veggie Spot</h2>
-        <p>At My Veggie Spot, we're passionate about fresh, plant-based meals that nourish your body and soul. Our mission is to offer healthy, delicious, and sustainable vegetarian options for everyone in the community.</p>
-        <p>Founded in 2025, our spot has quickly become a favourite for food lovers who care about health and the planet. We use local ingredients, eco-friendly packaging, and a whole lot of love in everything we serve.</p>
-      </div>
-    </div>
+  <main class="container py-5 text-center">
+    <h1 class="mb-4">About Us</h1>
+    <img src="images/about.jpg" class="img-fluid rounded" alt="About Veggie Restaurant">
+    <p class="mt-4">We connect food lovers with the best vegetarian and vegan spots in Ottawa. From quaint breakfast places to high-end vegan dinner establishments, we believe in sustainability, ethics, and delicious plant-based cuisine.</p>
   </main>
 
-  <footer class="text-center">
-    <div class="container">
-      <img src="images/Social Media icones.svg" alt="Social Media Icons" class="mb-3">
-      <p>&copy; 2025 My Veggie Spot. All rights reserved.</p>
-    </div>
+  <footer class="text-center text-white py-4" style="background:url('images/footer.jpg') center/cover no-repeat;">
+    <p>&copy; 2025 Veggie Restaurant. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

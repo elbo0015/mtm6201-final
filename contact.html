@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF‑8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – My Veggie Spot</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Kodchasan&family=Lexend+Giga&family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Contact - Veggie Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
 </head>
-<body>
-  <header class="bg-brown text-white py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid p-0">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navLinks">
-            <ul class="navbar-nav me-auto gap‑3">
-              <li class="nav-item"><a class="custom-btn" href="contact.html">Contact Us</a></li>
-              <li class="nav-item"><a class="custom-btn" href="index.html">Menu</a></li>
-              <li class="nav-item"><a class="custom-btn" href="about.html">About Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <img src="images/Veggie logo.svg" alt="Veggie Logo" width="100" class="ms-4">
+<body class="bg-dark text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Veggie logo.svg" alt="Veggie Restaurant Logo" width="120">
+      </a>
+      <a href="index.html" class="btn-gradient">Back Home</a>
     </div>
-  </header>
+  </nav>
 
-  <main class="container my-5">
-    <h1 class="text-center mb-4">Welcome to My Veggie Spot</h1>
-    <p class="lead text-center">We are passionate about bringing you fresh, delicious, and healthy vegetarian meals crafted with love and sustainability in mind.</p>
-
-    <div class="row mt-5 align-items-center">
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">Contact Us</h1>
+    <div class="row g-4">
       <div class="col-md-6">
-        <img src="images/header.jpg" alt="About Us Image" class="img-fluid rounded shadow">
+        <h5>Address</h5>
+        <p>148 Greenview Avenue, Ottawa, ON K1Y 3B6</p>
+        <h5>Phone</h5>
+        <p>(613) 555-0XXX</p>
+        <h5>Email</h5>
+        <p><a href="mailto:info@myveggiespot.ca" class="text-white">info@myveggiespot.ca</a></p>
       </div>
       <div class="col-md-6">
-        <h3>Our Story</h3>
-        <p>Founded with the goal of providing nourishing and ethical food choices, My Veggie Spot is your go-to place for wholesome meals that make you feel good inside and out. We use locally-sourced ingredients and eco-friendly practices to help protect the planet one plate at a time.</p>
-        <p>Whether you're a dedicated vegetarian or just trying to eat healthier, our menu offers something for everyone.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-gradient">Send Message</button>
+        </form>
       </div>
     </div>
   </main>
 
-  <footer class="footer-contact text-white text-center py-5" style="background-image: url('images/footer.jpg'); background-size: cover; background-position: center;">
-    <div class="container"><h5>Follow Us</h5>
-      <img src="images/Social Media icones.svg" alt="Social Media Icons" class="mb-3">
-      <p>&copy; 2025 My Veggie Spot. All rights reserved.</p>
-    </div>
+  <footer class="text-center text-white py-4" style="background:url('images/footer.jpg') center/cover no-repeat;">
+    <p>&copy; 2025 Veggie Restaurant. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

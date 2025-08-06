@@ -1,65 +1,60 @@
+:root {
+  --gradient-border: linear-gradient(90deg, #8e2de2, #ff6a00);
+  --button-bg: #0d0b24; /* inside */
+  --text-color: #fff;
+}
+
+/* Base */
 body {
-  font-family: 'Kodchasan', sans-serif;
-  color: #000;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: #000;
   margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
-  font-family: 'Lexend Giga', sans-serif;
-}
-
-.hero-img {
-  height: 60vh;
-  object-fit: cover;
-  filter: brightness(65%);
-  background-color: #000;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.bg-brown {
-  background-color: #7C5F42;
-}
-
-.btn-warning {
-  background-color: #F9D14F !important;
-  font-family: 'Roboto', sans-serif;
-}
-
-footer {
-  background-color: #000;
-  color: white;
-}
-
-blockquote {
-  font-style: italic;
-  margin: 0.5rem 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-/* Custom gradient buttons (rounded + border like your design) */
-.custom-btn {
-  padding: 10px 25px;
-  border-radius: 50px;
-  border: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(90deg, #f7c1ff, #6bdfff);
-  background-color: #0b0620;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
+/* Gradient Border Button */
+.btn-gradient {
   display: inline-block;
-  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--button-bg);
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  z-index: 1;
 }
 
-.custom-btn:hover {
-  background: linear-gradient(90deg, #f7c1ff, #6bdfff);
-  color: black;
+.btn-gradient::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 44px;
+  background: var(--gradient-border);
+  z-index: -1;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  transform: scale(1.05);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sections */
+.bg-dark {
+  background-color: #000 !important;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+  color: #000 !important;
 }
