@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Veggie Restaurant</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Header -->
-  <header class="text-center text-white py-5" style="background-color:#000;">
+  <header class="text-center text-white py-5 bg-black">
     <div class="container position-relative">
-      <!-- Logo -->
-      <img src="images/Veggie logo.svg" alt="Veggie Restaurant Logo" class="position-absolute top-0 end-0 m-3" width="120">
-
-      <!-- Title -->
-      <h1 class="fw-bold">Veggie Restaurant</h1>
-      <p class="mt-3">It has become your favorite directory where you can learn about the top plant-based eateries in Ottawa. <br>
-      From quaint little breakfast places to high-end vegan dinner establishments,<br>
-      we connect green gays with clean-and-geared-toward-sustainability-and-ethics food places.<br>
-      Whether you are vegan, vegetarian, or hungry for some knowledge, our guide lets you eat<br>
-      with dignity and well-being at every meal, every time.</p>
-
-      <!-- Buttons -->
-      <div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+      <img src="images/Veggie logo.svg" alt="Veggie Restaurant Logo" class="position-absolute top-0 end-0 m-3" width="120" />
+      <h1 class="fw-bold display-5">Veggie Restaurant</h1>
+      <p class="mt-3">
+        It has become your favorite directory where you can learn about the top plant-based eateries in Ottawa.<br>
+        From quaint little breakfast places to high-end vegan dinner establishments,<br>
+        we connect green gays with clean-and-geared-toward-sustainability-and-ethics food places.<br>
+        Whether you are vegan, vegetarian, or hungry for some knowledge, our guide lets you eat<br>
+        with dignity and well-being at every meal, every time.
+      </p>
+      <div class="mt-4 d-flex justify-content-center flex-wrap gap-3">
         <a href="contact.html" class="btn-gradient">Contact</a>
         <a href="#menu" class="btn-gradient">Menu</a>
         <a href="#testimonials" class="btn-gradient">Reviews</a>
@@ -35,18 +30,22 @@
     </div>
   </header>
 
-  <!-- Hero Image (smaller, 3x reduced) -->
-  <section class="text-center py-4">
-    <img src="images/header.jpg" alt="Restaurant interior" class="img-fluid rounded" style="max-width:33%;">
+  <!-- Hero Image -->
+  <section class="hero-image">
+    <img src="images/header.jpg" class="img-fluid w-100" alt="Restaurant interior" />
   </section>
 
   <!-- Trusted Logos -->
   <section class="py-5 text-center" style="background-color:#a18072;">
-    <p class="mb-4 text-white">Veggie Restaurant<br>Vegetarian meals, breakfast, lunch, and dinner<br>Trusted by the World’s Best Companies</p>
-    <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
-      <img src="images/Jeremy Logo.svg" alt="Jeremy O'Neill Logo" height="60">
-      <img src="images/Tonic Logo.svg" alt="Tonic Logo" height="60">
-      <img src="images/Sicily Logo.svg" alt="Sicily Logo" height="60">
+    <p class="text-white mb-4">
+      Veggie Restaurant<br>
+      Vegetarian meals, breakfast, lunch, and dinner<br>
+      Trusted by the World’s Best Companies
+    </p>
+    <div class="d-flex justify-content-center align-items-center flex-wrap gap-5">
+      <img src="images/Jeremy Logo.svg" alt="Jeremy O'Neill Logo" height="60" />
+      <img src="images/Tonic Logo.svg" alt="Tonic Logo" height="60" />
+      <img src="images/Sicily Logo.svg" alt="Sicily Logo" height="60" />
     </div>
   </section>
 
@@ -56,15 +55,15 @@
       <h2 class="mb-4">Our Menu</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <img src="images/menu1.jpg" class="img-fluid rounded" alt="Vegan bowl">
+          <img src="images/menu1.jpg" class="img-fluid rounded" alt="Vegan bowl" />
           <h5 class="mt-2">Vegan Bowls</h5>
         </div>
         <div class="col-md-4">
-          <img src="images/menu2.jpg" class="img-fluid rounded" alt="Vegetarian breakfast">
+          <img src="images/menu2.jpg" class="img-fluid rounded" alt="Vegetarian breakfast" />
           <h5 class="mt-2">Breakfast Specials</h5>
         </div>
         <div class="col-md-4">
-          <img src="images/menu3.jpeg" class="img-fluid rounded" alt="Salads">
+          <img src="images/menu3.jpeg" class="img-fluid rounded" alt="Salads" />
           <h5 class="mt-2">Fresh Salads</h5>
         </div>
       </div>
@@ -73,21 +72,21 @@
 
   <!-- Testimonials -->
   <section id="testimonials" class="py-5 bg-light text-dark">
-    <div class="container">
-      <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="container text-center">
+      <h2 class="mb-4">What Our Customers Say</h2>
       <div class="row g-4">
-        <div class="col-md-4 text-center">
-          <img src="images/Jane D., Toronto.jpg" class="rounded-circle mb-3" width="120" alt="Jane from Toronto">
+        <div class="col-md-4">
+          <img src="images/Jane D., Toronto.jpg" class="mb-3" width="120" alt="Jane from Toronto" />
           <p>"I always make a point to visit My Veggie Spot when in Ottawa. Delicious plant-based meals and friendly service."</p>
           <h6>- Jane D., Toronto</h6>
         </div>
-        <div class="col-md-4 text-center">
-          <img src="images/Scott S., Ottawa.jpeg" class="rounded-circle mb-3" width="120" alt="Scott from Ottawa">
+        <div class="col-md-4">
+          <img src="images/Scott S., Ottawa.jpeg" class="mb-3" width="120" alt="Scott from Ottawa" />
           <p>"Great atmosphere to get some work done while enjoying a hearty, healthy veggie dish or smoothie."</p>
           <h6>- Scott S., Ottawa</h6>
         </div>
-        <div class="col-md-4 text-center">
-          <img src="images/Susie F., Ottawa .jpeg" class="rounded-circle mb-3" width="120" alt="Susie from Ottawa">
+        <div class="col-md-4">
+          <img src="images/Susie F., Ottawa .jpeg" class="mb-3" width="120" alt="Susie from Ottawa" />
           <p>"Best vegetarian food in the Ottawa area and the service is top notch. Would highly recommend a visit."</p>
           <h6>- Susie F., Ottawa</h6>
         </div>
@@ -97,8 +96,8 @@
 
   <!-- Locations -->
   <section id="locations" class="py-5 bg-dark text-white">
-    <div class="container">
-      <h2 class="text-center mb-4">Our Locations</h2>
+    <div class="container text-center">
+      <h2 class="mb-4">Our Locations</h2>
       <div class="row g-4">
         <div class="col-md-6">
           <h5>Elgin Street</h5>
@@ -113,12 +112,11 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-white py-4" style="background:url('images/footer.jpg') center/cover no-repeat;">
-    <p class="mb-0">&copy; 2025 Veggie Restaurant. All rights reserved.</p>
-    <img src="images/Social Media icones.svg" alt="Social Media icons" width="150">
+  <footer class="text-center text-white py-4" style="background: url('images/footer.jpg') center/cover no-repeat;">
+    <p class="mb-1">&copy; 2025 Veggie Restaurant. All rights reserved.</p>
+    <img src="images/Social Media icones.svg" alt="Social Media Icons" width="150" />
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

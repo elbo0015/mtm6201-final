@@ -1,60 +1,174 @@
-:root {
-  --gradient-border: linear-gradient(90deg, #8e2de2, #ff6a00);
-  --button-bg: #0d0b24; /* inside */
-  --text-color: #fff;
-}
-
-/* Base */
+/* General Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  color: var(--text-color);
-  background-color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
   margin: 0;
   padding: 0;
 }
 
-/* Gradient Border Button */
+/* Buttons with gradient */
 .btn-gradient {
-  display: inline-block;
-  position: relative;
-  padding: 0.8rem 2rem;
-  border-radius: 40px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #fff;
-  background-color: var(--button-bg);
-  text-align: center;
-  text-decoration: none;
+  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
   border: none;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  width: 115px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #388E3C 0%, #689F38 100%);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Hero Section */
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  padding: 4rem 0;
+  background-color: #000;
+  color: white;
+}
+
+header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Trusted Logos */
+.trusted-logos {
+  background-color: #a18072;
+  padding: 3rem 0;
+}
+
+.trusted-logos img {
+  filter: brightness(0) invert(1);
+  height: 60px;
+  margin: 0 20px;
+}
+
+/* Menu Section */
+#menu {
+  background-color: #2a2a2a;
+  padding: 4rem 0;
+}
+
+.menu-card {
+  background: #2a2a2a;
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  z-index: 1;
+  border: 1px solid #3a3a3a;
+  height: 100%;
 }
 
-.btn-gradient::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border-radius: 44px;
-  background: var(--gradient-border);
-  z-index: -1;
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.btn-gradient:hover,
-.btn-gradient:focus {
-  transform: scale(1.05);
-  color: #fff;
-  text-decoration: none;
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-/* Sections */
-.bg-dark {
-  background-color: #000 !important;
+.menu-card h3 {
+  color: #4caf50;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
-.bg-light {
-  background-color: #f8f9fa !important;
-  color: #000 !important;
+
+.menu-card-content {
+  padding: 1.5rem;
+}
+
+.menu-card p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.menu-card p:last-child {
+  margin-bottom: 0;
+}
+
+.menu-card p strong {
+  color: white;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Locations */
+#locations {
+  background-color: #2a2a2a;
+  padding: 4rem 0;
+}
+
+/* Footer */
+footer {
+  background: url('images/footer.jpg') center/cover no-repeat;
+  padding: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 0;
+  }
+  
+  .btn-gradient {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+  
+  .trusted-logos img {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .menu-card {
+    margin-bottom: 1.5rem;
+  }
 }
